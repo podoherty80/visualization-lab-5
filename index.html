@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Load Javascript files -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+    
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    
+    <!-- Import the webpage's stylesheet -->
+   <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class = "row">
+        <div class = "column">
+            <label for="group-by">Group By</label>
+            <select id="group-by">
+            <option value="stores">Stores worldwide</option>
+            <option value="revenue">Revenue in billion U.S. dollars</option>
+            </select>
+        </div>
+        <div class="column">
+            <button id="sort" value="ascending">Sort</button>
+        </div>
+    </div>
+    <div class="chart">
+        <!-- You will append a SVG here-->
+    </div>
+  </body>
+</html>
